@@ -96,7 +96,7 @@ export default function ProductCards3({ product }) {
         <Link to={`/product/${product.title}/${product.id}`} className="product-img">
           <img
             className="img-product ls-is-cached lazyloaded"
-            src={`https://e-com.gurpreetbeniwal.com/${product.imgSrc}`}
+            src={`http://localhost:3004/${product.imgSrc}`}
             data-=""
             alt="image-product"
             width={500}
@@ -105,7 +105,7 @@ export default function ProductCards3({ product }) {
         
           <img
             className="img-hover ls-is-cached lazyloaded"
-            src={`https://e-com.gurpreetbeniwal.com/${product.imgHover}`}
+            src={`http://localhost:3004/${product.imgHover}`}
             data-=""
             alt="image-product"
             width={500}

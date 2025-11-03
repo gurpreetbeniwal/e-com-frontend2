@@ -192,7 +192,7 @@ export default function Products2() {
                   >
                     <img
                       className="img-product lazyload"
-                      src={`https://e-com.gurpreetbeniwal.com/${product.imgSrc}`}
+                      src={`http://localhost:3004/${product.imgSrc}`}
                       alt={product.title || 'Product image'}
                       width={300}
                       height={300}
@@ -202,7 +202,7 @@ export default function Products2() {
                     />
                     <img
                       className="img-hover lazyload"
-                      src={`https://e-com.gurpreetbeniwal.com/${product.imgSrc}`}
+                      src={`http://localhost:3004/${product.imgSrc}`}
                       alt={product.title || 'Product hover image'}
                       width={300}
                       height={300}
