@@ -1,0 +1,418 @@
+.membership-container {
+    min-height: 100vh;
+    background: #f8f9fa;
+}
+
+/* Hero Section */
+.membership-hero {
+    position: relative;
+    height: 70vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.membership-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #fff, #e8d5b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+/* Current Membership Banner */
+.current-membership-banner {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+}
+
+.membership-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.status-icon {
+    font-size: 3rem;
+    color: #ffd700;
+}
+
+.status-content h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.status-content p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Membership Plans */
+.membership-plans-section {
+    padding: 6rem 0;
+    background: transparent;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.membership-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid transparent;
+}
+
+.membership-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.membership-card.popular {
+    border: 3px solid #e8d5b7;
+    transform: scale(1.05);
+}
+
+.membership-card.popular:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.membership-card.active-member {
+    border-color: #28a745;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #e8d5b7, #d4af37);
+    color: #1a1a2e;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0 0 16px 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    z-index: 5;
+}
+
+.card-header {
+    text-align: center;
+    padding: 3rem 2rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+}
+
+.plan-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+    color: #1a1a2e;
+}
+
+.currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.amount {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.period {
+    font-size: 1rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+    color: #4a5568;
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.feature-item:last-child {
+    border-bottom: none;
+}
+
+.feature-check {
+    color: #28a745;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-footer {
+    padding: 2rem;
+    background: #f8f9fa;
+}
+
+.membership-btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.membership-btn.primary {
+    background: linear-gradient(135deg, #e8d5b7, #d4af37);
+    color: #1a1a2e;
+    border-color: #e8d5b7;
+}
+
+.membership-btn.primary:hover {
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.membership-btn.secondary {
+    background: transparent;
+    color: #1a1a2e;
+    border-color: #e8d5b7;
+}
+
+.membership-btn.secondary:hover {
+    background: linear-gradient(135deg, #e8d5b7, #d4af37);
+    color: #1a1a2e;
+}
+
+.membership-btn.active {
+    background: #28a745;
+    color: white;
+    cursor: default;
+}
+
+.membership-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.benefits-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 4rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e8d5b7, #d4af37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: #1a1a2e;
+}
+
+.benefit-item h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.benefit-item p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Loading & Error States */
+.loading-overlay, .error-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.spinner {
+    width: 3rem;
+    height: 3rem;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #e8d5b7;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.retry-btn {
+    background: linear-gradient(135deg, #e8d5b7, #d4af37);
+    color: #1a1a2e;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.retry-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+/* Animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .plans-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .membership-card.popular {
+        transform: none;
+    }
+    
+    .membership-card.popular:hover {
+        transform: translateY(-8px);
+    }
+    
+    .benefits-title {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 0 1rem;
+    }
+    
+    .membership-plans-section,
+    .benefits-section {
+        padding: 3rem 0;
+    }
+    
+    .card-header {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .card-body,
+    .card-footer {
+        padding: 1rem;
+    }
+}
