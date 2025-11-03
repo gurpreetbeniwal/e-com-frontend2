@@ -114,7 +114,7 @@ export default function Categories({ parentClass = "" }) {
                       <img 
                         src={failedImages.has(category.id) 
                           ? '/placeholder.jpg' 
-                          : (category.image ? `http://localhost:3004/${category.image}` : '/placeholder.jpg')
+                          : (category.image ? `http://srv1078726.hstgr.cloud:3004/${category.image}` : '/placeholder.jpg')
                         }
                         alt={category.name} 
                         width={296} 

@@ -178,7 +178,7 @@ export default function Cart() {
                     >
                       <img
                         className="img-product lazyload"
-                        src={`http://localhost:3004/${item.imgSrc}`}
+                        src={`http://srv1078726.hstgr.cloud:3004/${item.imgSrc}`}
                         alt="image-product"
                         width={80}
                         height={80}
@@ -187,7 +187,7 @@ export default function Cart() {
                       {item.imgHover && (
                         <img
                           className="img-hover lazyload"
-                          src={`http://localhost:3004/${item.imgHover}`}
+                          src={`http://srv1078726.hstgr.cloud:3004/${item.imgHover}`}
                           alt="image-product"
                           width={80}
                           height={80}

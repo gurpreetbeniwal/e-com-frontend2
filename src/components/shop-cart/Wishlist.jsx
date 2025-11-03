@@ -125,7 +125,7 @@ export default function Wishlist() {
                     <td className="wishlist-item_image">
                       <Link to={`/product-detail/${product.id}`}>
                         <img
-                          src={`http://localhost:3004/${product.imgSrc}`}
+                          src={`http://srv1078726.hstgr.cloud:3004/${product.imgSrc}`}
                           alt="Image"
                           className="lazyload"
                           width={500}

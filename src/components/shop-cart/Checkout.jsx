@@ -907,7 +907,7 @@ const [flashCode, setFlashCode] = useState('');
                     <Link to={`/product-detail/${item.productId}`} className="img-product">
                       <img
                         alt={item.title}
-                        src={`http://localhost:3004/${item.imgSrc}`}
+                        src={`http://srv1078726.hstgr.cloud:3004/${item.imgSrc}`}
                         width={500}
                         height={500}
                        

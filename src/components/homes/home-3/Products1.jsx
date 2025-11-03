@@ -208,7 +208,7 @@ export default function Products1() {
                     >
                       <img
                         className="img-product lazyload"
-                        src={`http://localhost:3004/${product.imgSrc}`}
+                        src={`http://srv1078726.hstgr.cloud:3004/${product.imgSrc}`}
                         alt={product.title}
                         width={400}
                         height={400}
@@ -218,7 +218,7 @@ export default function Products1() {
                       />
                       <img
                         className="img-hover lazyload"
-                        src={`http://localhost:3004/${product.imgSrc}`}
+                        src={`http://srv1078726.hstgr.cloud:3004/${product.imgSrc}`}
                         alt={product.title || 'Product hover image'}
                         width={400}
                         height={400}

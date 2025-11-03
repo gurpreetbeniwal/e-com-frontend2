@@ -158,7 +158,7 @@ export default function NavCategories2({ styleClass = "" }) {
                     >
                       {category.image && !failedImages.has(category.id) ? (
                         <img 
-                          src={`http://localhost:3004/${category.image}`}
+                          src={`http://srv1078726.hstgr.cloud:3004/${category.image}`}
                           alt={category.name}
                           width={20}
                           height={20}

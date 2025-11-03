@@ -12,7 +12,7 @@ export default function ShopCart() {
   const [couponCode, setCouponCode] = useState('');
   const [couponDiscount, setCouponDiscount] = useState(0);
   const [appliedCoupon, setAppliedCoupon] = useState(null);
-  const SERVER_URL = "http://localhost:3004/";
+  const SERVER_URL = "http://srv1078726.hstgr.cloud:3004/";
 
   // Fetch cart data when component mounts
   useEffect(() => {

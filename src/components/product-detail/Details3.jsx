@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider3 from "./sliders/Slider3";
 import ProductChoice from "./ProductChoice";
 
-const SERVER_URL = "http://localhost:3004";
+const SERVER_URL = "http://srv1078726.hstgr.cloud:3004";
 
 export default function Details3({ product }) {
   console.log("🛍️ Details3 received product:", product);
